@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <title>kwanny.github.io by kwanny</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+
+<STYLE type=text/css>
+TABLE {
+  FONT-SIZE: 9pt; FONT-FAMILY: Arial,굴림,굴림체
+}
+FONT {
+  FONT-SIZE: 9pt; FONT-FAMILY: Arial,굴림,굴림체
+}
+A:visited {
+  COLOR: #f05050; TEXT-DECORATION: none
+}
+A:hover {
+  COLOR: #ff0000; TEXT-DECORATION: underline
+}
+A:link {
+  COLOR: #1a5ca6; TEXT-DECORATION: none
+}
+A:active {
+  COLOR: #ff8e68; TEXT-DECORATION: none
+}
+</STYLE>
+<SCRIPT>
+<!--
+function trans() {
+  if (document.trans_form.url.value == "") {
+    alert("일본 사이트 주소를 입력하시지 않았습니다.");
+    return false;
+  }
+  return true;
+}
+function telnet_open() {
+   window.open('/web/20090804230405/http://www.hitel.net/telnet/hitelnet.html','','toolbar=no,location=no,directory=no,status=no,menubar=no,width=680,height=523');
+}
+function telnet(url) {
+   var site_url;
+   site_url = "/serome/login.php3?site=" + url;
+   window.open(site_url,'','toolbar=no,location=no,directory=no,status=no,menubar=no,width=680,height=523');
+}
+
+
+function j2k(url)
+{
+  var surl;
+  surl = "/web/20090804230405/http://www.excite.co.jp/world/korean/web/body/?&wb_lp=JAKO&wb_dis=2&wb_url=";
+  surl = surl + url;
+  window.open(surl);
+}
+
+function jp(url)
+{
+  var surl;
+  surl = "/web/20090804230405/http://www.excite.co.jp/world/korean/web/body/?&wb_lp=JAKO&wb_dis=2&wb_url=";
+  surl = surl + url;
+  window.open(surl);
+}
+
+
+function j2k_go(f) {
+  if(f.url.value == '' || f.url.value == 'http://') {
+    alert('번역하실 홈페이지 주소를 입력하세요.');
+    f.url.focus();
+  }
+  else {
+    if(f.url.value.substr(0, 7) == 'http://')
+      url = '/web/20090804230405/http://j2k.naver.com/j2k_frame.php/korean/' + f.url.value.substr(7);
+    else
+      url = '/web/20090804230405/http://j2k.naver.com/j2k_frame.php/korean/' + f.url.value;
+
+    var j2k_window = window.open(url, "_blank", "left=1,top=1,width=800,height=550,status=yes,resizable=yes,toolbar=yes");
+    j2k_window.focus();
+  }
+}
+
+
+// -->
+</SCRIPT>
+
+  <body ext=#000000 bgColor=#fffff0>
+
+
+<table><tr><td>
+<a href="index.html"> ◀ BACK to Top </a> | 자주가는 URL들을 모아서 한 페이지에 정리 했습니다. 
+</td></tr></table>
+
+<center>
+
+<TABLE 
+style="BORDER-RIGHT: #000000 2px solid; BORDER-TOP: #000000 2px solid; BORDER-LEFT: #000000 2px solid; BORDER-BOTTOM: #000000 2px solid" 
+width=750 bgColor=#f0f0e0>
+  <TBODY>
+  <TR vAlign=top><!--왼쪽--->
+    <TD>
+      <TABLE><!-- 다음넷 영한사전 ---------------->
+        <FORM name=query_box action=http://search.myquickfind.com/scripts/search.cgi 
+        method=get>
+        <TBODY>
+        <TR>
+          <TD width=80><A href="http://dic.daum.net/index.html" target=_TOP>(한메)영↔한</A></TD>
+          <TD noWrap><INPUT maxLength=100 size=30 name=word> <INPUT type=submit value=찾기 name=찾기> 
+          </TD>
+        </tr>
+        </FORM>
+
+        <FORM name=trans_form action="http://www.excite.co.jp/world/korean/web/body/" method=get>
+        <TR>
+          <TD width=80><a href="http://www.excite.co.jp/world/korean/">Excite 번역</a></TD>
+          <TD>
+          <input type=hidden name=wb_lp value=JAKO>
+          <input type=hidden name=wb_dis value=2>
+          <INPUT size=30 name=wb_url> 
+          <INPUT type=submit value=번역> 
+          </TD></TR></FORM>
+
+
+  <form name=f_go method=get action=# onsubmit='j2k_go(this); return(false);'>
+         <tr>
+         <td width=80><a href="http://enjoyjapan.naver.com/">네이버번역</a></td>
+  <td>
+  <input type=text name=url value=http:// size=30>
+  <input type=submit value=번역 onclick="j2k_go(document.f_go); return(false);">
+  </td></tr>
+  </form>
+
+
+        <FORM action=http://www.enuri.com/search/Searchlist.jsp method=post>
+        <TR>
+          <TD width=80><A href="http://www.enuri.com/">에누리</A></TD>
+          <TD>
+          <input type="hidden" name="searchkind" value="1">
+          <INPUT maxLength=255 size=30 name=keyword> <INPUT type=submit value=검색> 
+        </TD></TR></FORM>
+
+<FORM action="http://sourceforge.net/search/" method="get">
+<tr>
+<td width=80><a href="http://www.sf.net/">SourceForge</a></td>
+<td><INPUT TYPE=hidden name="type_of_search" value="soft"><INPUT type=text size=30 name="words" value=""> <input type=submit value=검색></td></tr>
+</FORM>
+
+
+<form action="http://en.wikipedia.org/wiki/Special:Search" id="searchform">
+<tr>
+<Td width=80><a href="http://www.wikipedia.org/">Wikipedia</a></td>
+<td>
+<input id="searchInput" size=30 name="search" type="text" accesskey="f" value="" />
+<input type='submit' name="fulltext" value="검색" />
+</td></tR>
+</form>
+
+
+</TBODY></TABLE></TD><!--오른쪽-->
+    <TD>
+      <TABLE>
+        <FORM name=search action=http://search.naver.com/search.naver 
+method=get>
+        <TBODY>
+        <TR>
+          <TD width=80><A href="http://www.naver.com/">네이버</A> | <a href="http://kin.naver.com/">지식in</a></TD>
+          <TD><INPUT maxLength=255 size=30 name=query> <INPUT type=submit value=검색> <INPUT type=hidden value=2 name=where> 
+          </TD></TR></FORM>
+        <FORM name=search action=http://search.yahoo.co.kr/bin/search>
+        <TR>
+          <TD width=80><A href="http://www.yahoo.co.kr/">야후코리아</A></TD>
+          <TD><INPUT size=30 name=p> <INPUT type=submit value=검색> 
+</TD></TR></FORM>
+
+<!------  구글 GOOGLE ------------>
+
+<FORM method=get action="http://www.google.co.kr/search">
+        <TR>
+          <TD width=80><A href="http://www.google.co.kr/">google</A></TD>
+          <TD>
+
+<input type=hidden name=hl value=ko>
+<INPUT size=30 type=text name=q> 
+<INPUT type=submit name=btnG value=Find> 
+          </TD></TR>
+</FORM>
+
+<!------  Everything2 ------------>
+
+
+<FORM NAME=everything2 action=http://www.everything2.com/index.pl method=get>
+       <TR>
+       <TD WIDTH=80><A HREF="http://www.everything2.com/">everything2</a></td>
+       <td><input size=30 name=node> <input type=submit value=Find></td>
+       </TR>
+       </FORM>
+
+        <FORM action=http://search.daum.net/cgi-bin/nsp/search.cgi method=get>
+        <TR>
+          <TD width=80><A href="http://www.daum.net/">다음</A></TD>
+          <TD><INPUT size=30 name=q> <INPUT type=submit value=검색><BR> </TD></TR></FORM></TBODY></TABLE>
+
+
+<a href="http://kwzf.net/">묻지마 검색</a>
+</TD>
+
+
+</TR></TBODY>
+
+
+
+</TABLE><BR>
+
+<TABLE 
+style="BORDER-RIGHT: #000000 2px solid; BORDER-TOP: #000000 2px solid; BORDER-LEFT: #000000 2px solid; BORDER-BOTTOM: #000000 2px solid" 
+cellPadding=10 width=750>
+  <TBODY>
+  <TR vAlign=top>
+    <TD 
+    style="BORDER-RIGHT: #000000 1px solid; BORDER-TOP: #000000 1px solid; BORDER-LEFT: #000000 1px solid; BORDER-BOTTOM: #000000 1px solid" 
+    width="50%">
+      <P>관련사 홈페이지: 
+      <TABLE 
+      style="BORDER-RIGHT: #000000 1px solid; BORDER-TOP: #000000 1px solid; BORDER-LEFT: #000000 1px solid; BORDER-BOTTOM: #000000 1px solid" 
+      cellSpacing=0 width="100%" bgColor=#f0f0e0>
+        <TBODY>
+<TR>
+<TD>엔트리브</td>
+<td>
+<b><a href="http://www.ntreev.com/">엔트리브</a></b> |
+<a href="http://tts.tricskter.co.kr/">TTS</a> |
+<a href="http://www.pangya.com/">팡야</a> |
+</td>
+</TR>
+        <TR>
+          <TD bgColor=#e0e0d0>
+            <A href="http://www.sonnori.co.kr/"><STRONG>손노리</STRONG></A> </TD>
+          <TD bgColor=#e0e0d0><A 
+            href="http://www.norinori.co.kr/">노리노리</A> | 
+            <A href="http://www.sonnori.co.kr/steel">강철제국</A> | 
+            <A href="http://www.projectarcturus.com/">악튜러스</A> | 
+            <A href="http://www.sonnori.co.kr/whiteday/html/main.html">화이트데이</A> | 
+            <A href="http://www.sonnori.co.kr/asto-r">Asto-R</A> | 
+            <A href="http://www.sonnori.co.kr/festival">손.발</A> | 
+            <A href="http://developer.sonnori.com/">개발자 홈</A> | 
+            <A href="http://www.sonnori.co.kr/paperworks/">종이공작소</A> | 
+          </TD></TR>
+        <TR>
+          <TD bgColor=#e0e0d0><NOBR><STRONG>국내 회사</STRONG></NOBR> </TD>
+          <TD bgColor=#e0e0d0>
+
+          </TD></TR>
+        <TR>
+          <TD><STRONG>해외 회사</STRONG> </TD>
+          <TD><A href="javascript:j2k('www.namco.co.jp');">남코</A> | <A 
+            href="javascript:j2k('www.konami.co.jp');">코나미</A> | <A 
+            href="javascript:j2k('www.sega.co.jp');">세가</A> | <A 
+            href="http://www.scei.co.jp/">scei</A> | <A 
+            href="http://www.scek.co.kr/">scek</A> | 
+        </TD></TR></TBODY></TABLE><BR>프로그래머: 
+      <TABLE 
+      style="BORDER-RIGHT: #000000 1px solid; BORDER-TOP: #000000 1px solid; BORDER-LEFT: #000000 1px solid; BORDER-BOTTOM: #000000 1px solid" 
+      cellSpacing=0 width="100%" bgColor=#f0f0e0>
+        <TBODY>
+        <TR>
+          <TD bgColor=#e0e0d0><STRONG>추천</STRONG></TD>
+          <TD bgColor=#e0e0d0>
+
+<B>해외</B> 
+<A href="http://www.flipcode.com/">flipcode</A> | 
+<a href="http://www.devmaster.net/">devmaster</a> |
+<A href="http://www.gamedev.net/">gamedev</A> |
+<a href="http://www.devimg.net/">devimg</a> | 
+<A href="http://www.gamasutra.com/">gamasutra</A> |  
+<A href="http://www.gdmag.com/">gdmag</a> | 
+<a href="http://www.cfxweb.net/">cfxweb</A> | 
+<A href="http://www.beyond3d.com/">beyond3d</A> | 
+<A href="http://www.rage3d.com/">rage3d</a> |
+<A href="http://www.ga-source.com/dev/">ga-source/Dev</A> | 
+<A href="http://sunsite.auc.dk/lgdc/">lgdcC</A> |  
+<A href="http://www.infuse.org/demoscene/news.php3">demoscene</A> | 
+<a href="http://www.codepixel.com&gt;codepixel&lt;/a&gt; |
+&lt;A href="http://www.glvelocity.com/">GlVelocity</A> | 
+<A href="http://www.gdconf.com/">GDconf</A> |  
+<A href="http://www.gamestate.net/">GameState</A> | 
+<A href="http://www.opengl.org/">OpenGL</A> | 
+<a href="http://www.joelonsoftware.com/index.html">JoelOnSoftware</a> | 
+<a href="http://www.technology.scee.net/sceesite/index.html">scee</a> | 
+<a href="http://www.eweek.com/">eweek</a> |
+<a href="http://www.hackaday.com/">hackaday</a> |
+<a href="http://www.gaffer.org/">gaffer</a> | 
+<A href="http://www.tucows.com/">tucows.com</a> |
+<hr>
+<b>DemoScene</b>
+<a href="http://www.scene.org/">scene</a> | 
+<a href="http://www.pouet.net/index.php">pouet</a> |
+<hr>
+<form name=japcon><input type=radio style="height:12pt;font-size:8pt"name=japm value=0 checked>japan<input type=radio style="height:12pt;font-size:8pt"name=japm value=1>naver<input type=radio style="height:12pt;font-size:8pt"name=japm value=2>excite</form>
+<B>일본</B> 
+<A href="http://spin.s2c.ne.jp/">spin</A>
+<a href="http://j2k.naver.com/j2k.php/korean/spin.s2c.ne.jp/">ⓣ| 
+<A href="http://web.sfc.keio.ac.jp/~syoyo/">syoyo</A> | 
+<a href="http://www.bee-www.com/">bee</a> |
+<A href="http://lucille.sourceforge.net/">lucille</a> . 
+<a href="http://lucille.atso-net.jp/blog/">blog</a> 
+<a target="_NEW" href="http://www.excite.co.jp/world/korean/web/body/?&amp;wb_lp=JAKO&amp;wb_dis=2&amp;wb_url=http://lucille.atso-net.jp/blog/">ⓣ</a> |
+<A href="http://cgi3.tky.3web.ne.jp/~tkano/">kano</A> | 
+<A href="http://homepage1.nifty.com/open-prog/">openp.</A> | 
+<A href="http://fumufumu.q-games.com/">fumufumu</A>
+<a href="http://j2k.naver.com/j2k.php/korean/http://fumufumu.q-games.com/">ⓣ</a> | 
+<A href="http://www.t-pot.com/">t-pot</A>
+<a href="http://j2k.naver.com/j2k.php/korean/http://www.t-pot.com/">ⓣ</A> | 
+<A href="http://www.daionet.gr.jp/~masa/">masa</A> 
+<A href="http://j2k.naver.com/j2k.php/korean/www.daionet.gr.jp/~masa/">ⓣ</A> |  
+<A href="http://www.radiumsoftware.com/diary.html">rants</A> 
+<a href="http://j2k.naver.com/j2k.php/korean/d.hatena.ne.jp/KZR/">KZR</A>
+<a href="http://j2k.naver.com/j2k.php/korean/www.radiumsoftware.com/diary.html">ⓣ</A> |
+<a href="http://d.hatena.ne.jp/ABA/">ABA</a> 
+<a target="_NEW" href="http://www.excite.co.jp/world/korean/web/body/?&amp;wb_lp=JAKO&amp;wb_dis=2&amp;wb_url=http://d.hatena.ne.jp/ABA/">ⓣ</a> | 
+<a href="http://j2k.naver.com/j2k_frame.php/korean/www.openspc2.org/~masa/">masatani</a> | 
+<a href="http://j2k.naver.com/j2k.php/korean/bbx.hp.infoseek.co.jp/cgi-bin/bbx.cgi">bbx</a> |
+<a href="http://j2k.naver.com/j2k.php/korean/gsyoku.no-ip.com/">gsyoku</a> |
+<a href="http://opengl.jp/blogger/">andoh</a>
+<a href="http://j2k.naver.com/j2k.php/korean/opengl.jp/blogger/">ⓣ</a> |
+<a href="http://j2k.naver.com/j2k_frame.php/korean/opengl.jp/google/">googleⓣ</a> |
+<a href="http://j2k.naver.com/j2k.php/korean/mizuguchi.biz/">mizuguchi</a> |
+<a href="http://j2k.naver.com/j2k.php/korean/www.gamdev.org/">gamdev</a> |
+<a href="http://d.hatena.ne.jp/mdiapp/">hatena blog</a> 
+<a href="http://www.excite.co.jp/world/korean/web/?wb_url=http%3A%2F%2Fd.hatena.ne.jp%2Fmdiapp%2F20061001&amp;wb_lp=JAKO&amp;wb_dis=2">ⓣ</a> |
+<a href="http://j2k.naver.com/j2k.php/korean/a.hatena.ne.jp/imaki/">hatena</a> |
+<a href="http://j2k.naver.com/j2k.php/korean/d.hatena.ne.jp/riesling/">hatena2</a> |
+<a href="http://www.doomiii.jp/slang/">flexion</a>
+<a href="http://slang.blog15.fc2.com/">slang</a> |
+<a href="http://j2k.naver.com/j2k_frame.php/korean/www.usability.gr.jp/">usablity.gr.jp</a> |
+<a href="http://j2k.naver.com/j2k.php/korean/www.ousam.com/blog/">ousam</a> |
+<a href="http://j2k.naver.com/j2k.php/korean/fmod.exblog.jp/">fmod</a> |
+<a href="http://j2k.naver.com/j2k_frame.php/korean/http://blog.livedoor.jp/shi3z/">shi3z</a> |
+<a href="http://www.excite.co.jp/world/korean/web/body/?wb_lp=JAKO&amp;wb_dis=2&amp;wb_url=japan.cnet.com">cnet.jp</a> |
+<a href="http://j2k.naver.com/j2k_frame.php/korean/hotwired.goo.ne.jp/news/culture/">hotwired.jp</a> |
+<a href="http://j2k.naver.com/j2k.php/korean/www.technobahn.com/">technobahn</a> |
+<hr>
+<B>국내</B> 
+<A href="http://www.gpgstudy.com/">Gpgstudy</A> 
+<a href="http://www.gpgstudy.com/recentposts.php">ⓕ</A> | 
+<a href="http://mypage.sarang.net/gdblog/">gdblog</a> |
+<a href="http://allgd.net/">allgd</a> |
+<a href="http://www.lameproof.com/">lameproof</a> |
+<A href="http://www.gamecode.org/">Gamecode</A> | 
+<A href="http://www.g-matrix.pe.kr/">g-matrix</A> | 
+<A href="http://www.gamza.net/">Gamza</A> | 
+<A href="http://www.digibath.com/noerror/">noerror</a> |
+<a href="http://doocub.egloos.com/">doocub</a> |
+<A href="http://www.devpia.com/">DevPia</A> | 
+<A href="http://www.dexgame.com/">dexgame</a> |
+<a href="http://wired.daum.net/">wired.korea</a> |
+<a href="http://kldp.net/">kldp</a> |
+<a href="http://telnet.or.kr/main.html">telnet</a> |
+<a href="http://www.gamephysics.co.kr/">gamephysics</a> |
+<a href="http://www.dev3d.net/">dev3d</a> |
+<a href="http://www.galexandria.com/">galexandria</a> | 
+
+</TD></TR>
+        <TR>
+          <TD><STRONG>3D,GFX</STRONG></TD>
+          <TD>
+            <a href="http://www.hinjang.com/gfx/">hinjang</a> |
+            <A href="http://www.realtimerendering.com/">Realtime 
+            rendering</A> | <A 
+            onmouseover="window.status='3D 엔진 리스트';return true" 
+            href="http://cg.cs.tu-berlin.de/~ki/engines.html">3del</A> | <A 
+            onmouseover="window.status='3D 이론 모음';return true" 
+            href="http://www.grafix3d.tzo.com/main/index.html">grafix3d</A> | <A 
+            href="http://www.graphicspapers.com/">GraphicsPapers</A> |  <A 
+            href="http://discuss.microsoft.com/archives/directxdev.html">MSDX 
+            dev</A> | <A href="http://www.ati.com/developer/index.html">ATI 
+            Dev.</A> | <A href="http://developer.nvidia.com/">NVidia Dev. </A>| 
+            <A href="http://www.cgshaders.org/">CgShader</A> | 
+<a href="http://frustum.org/">frustum</a> |
+<a href="http://www.humus.ca/">humus</a> |
+</TD></TR>
+        <TR>
+          <TD bgColor=#e0e0d0><STRONG>C++</STRONG></TD>
+          <TD bgColor=#e0e0d0>| <A 
+            href="http://gaston.snu.ac.kr/~sjjung/stl/">stl 메뉴얼</A> | <A 
+            href="http://www.stlport.org/">stlport</A> | <A 
+            href="http://sslab.icu.ac.kr/oonews/">객체지향뉴스레터</A> </TD></TR>
+        <TR>
+          <TD><STRONG>MFC</STRONG></TD>
+          <TD><A href="http://codeguru.earthweb.com/">CodeGuru</A> | <A 
+            href="http://www.codeproject.com/">CodeProject</A> | <A 
+            href="http://www.kitri.re.kr/taeo/mfc/">MFC공부방</A> | <A 
+            href="http://www.tipssoft.com/">tipss</A> </TD></TR>
+        <TR>
+          <TD bgColor=#e0e0d0><STRONG>INFO</STRONG></TD>
+          <TD bgColor=#e0e0d0>  <A 
+            href="http://www.game-developer.com/">Search</A> | <A 
+            href="http://www.programmersheaven.com/">프로그래머천국</A> | </TD></TR>
+        <TR>
+          <TD>Lists</TD>
+          <TD> <A 
+            href="http://sourceforge.net/mailarchive/forum.php?forum=gdalgorithms-list">GDAlgorithm</A> 
+            | <A 
+            href="http://groups.google.com/groups?hl=ko&amp;lr=&amp;safe=off&amp;group=comp.graphics.algorithms">graphics</A> 
+            | <A 
+            href="http://groups.google.com/groups?hl=ko&amp;lr=&amp;safe=off&amp;group=comp.games.development">gamedev</A> 
+            | <A 
+            href="http://groups.google.com/groups?hl=ko&amp;lr=&amp;group=microsoft.public.win32.programmer.directx.graphics">directx</A> 
+            | </TD></TR>
+        <TR>
+          <TD><STRONG>ETC</STRONG></TD>
+          <TD><A href="http://linux.sarang.net/">적수</A> | <A 
+            href="http://www.kldp.org/">kldp</A> | <A 
+            href="http://members.xoom.com/eunjea/">ktip</A> | <A 
+            href="http://phpschool.com/php_loveme">php_loveme</A> |  
+            | <A href="http://www.linux.co.kr/">linux</A> | 
+            <a href="http://people.kldp.org/~eunjea/">eunjea</a> 
+
+      </TD></TR></TBODY></TABLE><BR>그래픽 관련 : 
+      <TABLE 
+      style="BORDER-RIGHT: #000000 1px solid; BORDER-TOP: #000000 1px solid; BORDER-LEFT: #000000 1px solid; BORDER-BOTTOM: #000000 1px solid" 
+      cellSpacing=0 width="100%" bgColor=#f0f0e0>
+        <TBODY>
+        <TR>
+          <TD bgColor=#e0e0d0><STRONG>FONT</STRONG></TD>
+          <TD bgColor=#e0e0d0><A href="http://lezzfont.new21.net/">레쯔폰트</A> | 
+            <A href="http://www.coolarchive.com/">cool archive</A> | <A 
+            href="http://www.raph.com/3dartists/artgallery/ag-ii1.html">3D 
+            Gallery</A> | <A href="http://halflife.gamedesign.net/">Halflife 
+            Editing</A> | </TD></TR>
+        <TR>
+          <TD><STRONG>LINK</STRONG></TD>
+          <TD>
+<A href="http://www.cgland.com/">CG LAND</A> | 
+<a href="http://magazine.jungle.co.kr/">정글</a> |
+<A href="http://www.low3d.com/">low3d</a> |
+<a href="http://www.cubebox3d.com/">cubebox3d</a> | 
+<A href="http://www.cgchannel.com/">cg channel</A> | 
+<A href="http://www.cglink.co.kr/">cg link</A> | 
+<A href="http://www.3dartisan.com/">3dartisan</A> | 
+<A href="http://www.3dwizard.co.kr/">3dwizard</A> | 
+<A href="http://www.animatus.com/">3D-knot</A> | 
+<A href="http://mypage.channeli.net/supern/html/html.html">HTML</A> | 
+<A href="http://www.rainworld.com/oe_99/forge/ps_tut/">포토샵테크닉</A> | 
+<A href="http://www.highend3d.com/">Highend3d</A> | 
+<A href="http://www.3dluvr.com/content/">3dLuVr</A> | 
+<A href="http://www.raph.com/3dartists/">3dArtist</A> </TD>
+        <TR>
+          <TD bgColor=#e0e0d0><STRONG>Texture</STRONG></TD>
+          <TD bgColor=#e0e0d0><A href="http://www.max3d.com/">Free MAX 
+            PlugIn</A> | <A href="http://www.bladestextures.com/">Blade텍스쳐</A> | 
+          </TD></TR></TBODY></TABLE>
+      <P>기획 관련 : 
+      <TABLE 
+      style="BORDER-RIGHT: #000000 1px solid; BORDER-TOP: #000000 1px solid; BORDER-LEFT: #000000 1px solid; BORDER-BOTTOM: #000000 1px solid" 
+      width="100%" bgColor=#f0f0e0>
+        <TBODY>
+        <TR>
+          <TD><STRONG>링크</STRONG></TD>
+          <TD><A href="http://www.game-gpm.net/">game-gpm</A> | <A 
+            href="http://gamedesignerz.net/">gamedesignerz</A> | 
+      </TD></TR></TBODY></TABLE> </P>
+
+    <TD 
+    style="BORDER-RIGHT: #000000 1px solid; BORDER-TOP: #000000 1px solid; BORDER-LEFT: #000000 1px solid; BORDER-BOTTOM: #000000 1px solid">업무 
+      관련 : 
+      <TABLE 
+      style="BORDER-RIGHT: #000000 1px solid; BORDER-TOP: #000000 1px solid; BORDER-LEFT: #000000 1px solid; BORDER-BOTTOM: #000000 1px solid" 
+      cellSpacing=0 cellPadding=5 width="100%" bgColor=#f0f0e0>
+        <TBODY>
+        <TR>
+          <TD bgColor=#e0e0d0><STRONG>도메인</STRONG></TD>
+          <TD bgColor=#e0e0d0><A href="http://www.networksolutions.com/">com 
+            도메인</A> | <A href="http://www.nic.or.kr/">kr 도메인</A> | <A 
+            href="http://www.whois.co.kr/">도메인 검색 서비스</A> </TD></TR>
+        <TR>
+          <TD><STRONG>보안</STRONG></TD>
+          <TD><A href="http://www.certcc.or.kr/">정보보호센터</A> | <A 
+            href="http://www.hackerslab.co.kr/">해커스랩</A> |
+           <a href="http://www.arin.net/tools/whois_help.html">국제IP</a> |
+           <a href="http://whois.nic.or.kr/">국내IP</A> |
+<a href="http://kwanny.ntreev.net/t.htm">whoami</a> |
+
+
+      </TD></TR></TBODY></TABLE><BR>뉴스와 메디아 : 
+      <TABLE 
+      style="BORDER-RIGHT: #000000 1px solid; BORDER-TOP: #000000 1px solid; BORDER-LEFT: #000000 1px solid; BORDER-BOTTOM: #000000 1px solid" 
+      cellSpacing=0 cellPadding=5 width="100%" bgColor=#f0f0e0>
+        <TBODY>
+        <TR>
+          <TD width=36 ><STRONG>뉴스</STRONG></TD>
+          <TD >
+<a href="http://www.viewsnnews.com/">viewnnews</a> |
+<A href="http://www.hani.co.kr/">한겨례</A> | 
+<a href="http://www.edaily.co.kr/">이데일리</a> |
+
+<A href="http://www.chosun.co.kr/">조선</A> | 
+<A href="http://www.joins.com/">중앙</A> | 
+<A href="http://www.donga.com/">동아</A> | 
+
+<A href="http://www.mk.co.kr/">매일경제</A> | 
+<A href="http://www.naeway.co.kr/">내외경제</A> | <BR>
+<A href="http://www.yonhapnews.co.kr/">연합뉴스</A> | 
+<A href="http://www.inews24.com/">i-News24</A> | 
+<A href="http://www.etimesi.com/">전자신문</A> | 
+<A href="http://www.dt.co.kr/">디지털타임즈</A> | 
+<a href="http://www.dkbnews.com/">도깨비뉴스</a> |
+<a href="http://dart.fss.or.kr/">전자공시</a> |
+<a href="http://www.boannews.com/default.asp">보안뉴스</a> |
+<a href="http://http//www.ddaily.co.kr/main/index.php">디지털데일리</a> | 
+<br>
+<a href="http://www.blogkorea.org/">blog-kr</a> |
+<a href="http://allblog.net/">allblog</a> |
+<a href="http://dna.daum.net/lens">daum.lens</a> |
+<a href="http://hanrss.com/">hanrss</a> |
+
+</TD></TR>
+
+        <TR>
+        <TD bgColor=#e0e0d0><STRONG>그룹</STRONG></TD>
+<TD bgColor=#e0e0d0>
+<A href="http://www.kgda.or.kr/">KGDA</A> | 
+<a href="http://www.mobian.org/">mobian</a> |
+<A href="http://www.gameinfinity.or.kr/">겜지원센터</A> | 
+<a href="http://www.gitiss.org/">gitiss</a> |
+<a href="http://www.kgdb.or.kr/">kgdb</a> |
+<a href="http://www.ksdf.net/">ksdf</a> |
+<a href="http://www.kipa.or.kr/">kipa</a> |
+<a href="http://www.game.or.kr/">kesa</a> |
+<a href="http://www.kocca.or.kr/">kocca</a> |
+<a href="http://www.kmrb.or.kr/">영등위</a> |
+<a href="http://www.kiss.or.kr/">한국정보과학회</a> |
+<a href="http://aog.wo.to/">A.O.G</a> |
+<a href="http://grb.or.kr/Statistics/GameStatistics.aspx">게등위 심위결과</a> |
+<a href="http://www.kca.go.kr/">소비자원</a> |
+
+</TD>
+        </TR>
+        <TR>
+<TD><STRONG>정보</STRONG></TD>
+<TD>
+<A href="http://dev.niaka.com/">Dev.niaka</A> | 
+<A href="http://www.21click.co.kr/index.asp">21Click</A> | 
+<A href="http://www.sbresearch.co.kr/">SB리서치</A> | 
+<A href="http://www.zdnet.co.kr/">ZDNet Korea</A> | 
+<A href="http://slashdot.org/">SlashDog</A> | 
+<A href="http://www.planetquake.com/polycount/">PolyCount</A>  |
+<a href="http://www.gametrics.com/">gametrics</a> |
+<a href="http://www.gamejob.co.kr/">게임잡(Gamejob)</a> |
+<a href="http://www.netimo.net/home/pcbanggame/index.html">netimo</a> |
+</TD></TR>
+        <TR>
+<TD bgColor=#e0e0d0><STRONG>H/W</STRONG></TD>
+<TD bgColor=#e0e0d0>
+<a href="http://aving.net/kr/">aving</a> |
+<a href="http://www.clien.net/">clien</a> | 
+<a href="http://www.parkoz.com/">parkoz</a> |
+<a href="http://www.kbench.com/">kbench</a> |
+<A href="http://betanews.net/">betanews</a> |
+<a href="http://www.say25.com/">say25</a> |
+<A href="http://www.pcguider.com/">PCguider</A> | 
+<A href="http://www.pcbee.co.kr/">pcBee</A> | 
+<A href="http://www.tomshardware.co.kr/">톰's H/W</A> | 
+<A href="http://www.handpc.com/">Handpc.com</A> | 
+<A href="http://www.nvnews.net/">NVNews</A> | 
+<A href="http://www.extremetech.com/">ExtremeTech</A> | 
+<A href="http://www.anandtech.com/">Anandtech</A> 
+</TD></TR>
+        <TR>
+<TD><STRONG>S/W</STRONG></TD>
+<TD>
+<A href="http://www.myfolder.net/">마이폴더</A> | 
+<A href="http://www.shareware.com/">쉐어웨어</A> | 
+<A href="http://shareware.inuri.com/">쉐어웨어 KR</A> | 
+<A href="http://www.bomul.com/">보물섬</A> | 
+<A href="http://www.atfile.com/">앳파일</A> | 
+<a href="http://www.avault.com/pcrl/">PCRL</a> |
+</TD></TR>
+        <TR vAlign=top>
+          <TD bgcolor=#e0e0d0><STRONG>외국 웹진</STRONG></TD>
+          <TD bgcolor=#e0e0d0>
+<A href="http://www.gamespot.com/">Gamespot</A> | 
+<A href="http://www.warp2search.net/">warp2</A> | 
+<a href="http://www.next-gen.biz/">next-gen</a> |
+<A href="http://www.gamesindustry.biz/">gameindustry</a> | 
+<a href="http://www.gametrailers.com/">gametrailers</a> 
+</TD></TR>
+        <TR vAlign=top>
+          <TD><STRONG>일본 웹진</STRONG></TD>
+          <TD>
+<A href="http://j2k.naver.com/j2k.php/korean/www.4gamer.net">4Gamer/JP</A> | 
+<a href="http://j2k.naver.com/j2k.php/korean/gameonline.jp">gameonline</a> |
+<a href="http://j2k.naver.com/j2k.php/korean/www.zdnet.co.jp/games/">gamespot</a> |
+<a href="http://j2k.naver.com/j2k.php/korean/www.itmedia.co.jp/games/">itmedia</a> |
+<a href="http://j2k.naver.com/j2k.php/korean/www.famitsu.com/">famitsu</a> |
+<a href="http://j2k.naver.com/j2k.php/korean/www.allabout.jp/game">allabout</a> |
+<a href="http://j2k.naver.com/j2k.php/korean/game.watch.impress.co.jp/">impress</a> |
+<a href="http://j2k.naver.com/j2k.php/korean/www.gamespark.jp/">gamespark</a> |
+
+</TD></TR>
+        <TR vAlign=top>
+          <TD bgColor=#e0e0d0><STRONG>국내<BR>게임<BR>웹진</STRONG></TD>
+          <TD bgColor=#e0e0d0>
+<a href="http://www.gdaily.co.kr/">GDaily</a> | 
+<a href="http://www.thisisgame.com/">ThisIsGame</a> |
+<a href="http://videogamerx.gamedonga.co.kr/zbxe/">videogamerx</a> |
+<A href="http://ruliweb.empas.com/">Ruliweb</A> | 
+<A href="http://www.gamemeca.com/">게임메카</A> | 
+<A href="http://www.gametime.co.kr/">GameTime</A> | 
+<A href="http://gamechosun.co.kr/">게임조선</A> | 
+<A href="http://gamespot.zdnet.co.kr/">GameSpot/KR</A> | 
+<A href="http://www.gamezone21.com/">gamezone21</A> |
+<A href="http://www.thegamenews.com/">게임신문</a> | 
+<A href="http://www.psgzone.com/">psgzone</A> | 
+<A href="http://www.vgl.co.kr/">vgl</A> | 
+<a href="http://www.playps3.co.kr/">PS3</a> |
+<A href="http://gamesee.com/">gamesee</A> | 
+<A href="http://www.onlife21.net/">OnLife21</A> |
+<a href="http://www.gamerookie.com/">gamerookie</a> |
+<a href="http://www.ongate.co.kr/">ongate</a> |
+<a href="http://silpir.net/">silpir</a> |
+
+</TD></TR>
+        <TR vAlign=top>
+          <TD><STRONG>기타</STRONG></TD>
+          <TD><A href="http://www.gamewallpapers.com/">게임월페이퍼</A> | <A 
+            href="http://www.defence.co.kr/">군사웹진</A> | <A 
+            href="http://www.thehungersite.com/">배고픈아이들</A> | <A 
+            href="http://www.donga.com/docs/magazine/science_donga/">과학동아</A> | 
+            <A href="http://www.oman.co.kr/">오만한 우먼</A> |
+            <a href="http://www.nationalgeographic.com/">nat.gg</a> |
+            <a href="http://www.kewp.com/sabo/main.html">동서마당</a> |
+            <a href="#" onclick="javascript:window.open('http://speller.cs.pusan.ac.kr/','','toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=no, width=460, height=520');">한글 맞춤법</a> 
+            <a href="http://urimal.cs.pusan.ac.kr/urimal_new/">ⓒ</a>
+            |
+            <br>  
+            <a href="http://www.apple.com/">apple</a> 
+            <a href="http://www.apple.co.kr/">.kr</a> |
+            <a href="http://www.appleforum.com/">AppleForum</a> |
+            <a href="http://albireo.net/">powerbook</a> |
+            <a href="http://kmug.co.kr/">kmug</a> |
+            <a href="http://maczoo.com/">maczoo</a> |
+            <a href="http://osxdev.org/">osxdev</a> 
+            <a href="http://swiki.osxdev.org/">(wiki)</a> |
+            <a href="http://osxinside.tistory.com/">osxinside</a>|
+<a href="http://iphoneos.co.kr/">iphone dev</a> |
+<a href="http://devapp.org/">devapp</a> |
+            <br>
+      </TD></TR></TBODY></TABLE><BR>취미 & 생활: 
+      <TABLE 
+      style="BORDER-RIGHT: #000000 1px solid; BORDER-TOP: #000000 1px solid; BORDER-LEFT: #000000 1px solid; BORDER-BOTTOM: #000000 1px solid" 
+      cellSpacing=0 cellPadding=5 width="100%" bgColor=#f0f0e0>
+        <TBODY>
+        <TR>
+          <TD bgColor=#e0e0d0><STRONG>쇼핑</STRONG></TD>
+          <TD bgColor=#e0e0d0>▶ 
+<a href="http://www.kangcom.com/">kangcom</a> |
+<A href="http://www.yes24.com/">YES24</A> | 
+<A href="http://www.amazon.com/">아마존</A> | 
+<A href="http://www.amazon.co.jp/">아마존.jp</A> | 
+<A href="http://www.bn.com/">반스앤노블</A> | ▶ 
+<A href="http://www.tube.co.kr/">튜브뮤직</A> | ▶ 
+<A href="http://www.itcomputer.co.kr/">IT컴퓨터</A> | ▶ 
+<A href="http://www.kakaku.com/">일본가격</A> | 
+<A href="http://www.wizwid.com/">미국주문</A> | 
+<A href="http://www.sonystyle.co.kr/">Sony Style</A> | ▶ 
+<A href="http://www.music123.com/">악기</A> | 
+<A href="http://www.mnsmall.com/">미디엔사운드</A> ▶ 
+<A href="http://www.omi.co.kr/">가격비교</A> | 
+<A href="http://www.bestbuyer.co.kr/">BestBuyer</A> | 
+<a href="http://www.enuri.com/">enuri</a> | ▶
+<a href="http://www.maceshop.co.kr/">maceshop</a> |
+<a href="http://www.funshop.co.kr/">funshop</a> |
+        </TD></TR>
+        <TR>
+          <TD><STRONG>금융</STRONG></TD>
+          <TD>
+<A href="http://www.shinhan.com/">신한은행</A> | 
+<a href="http://www.shinhancard.com/">신한카드</a> |
+<A href="http://www.goodi.com/">신한증권</A> |
+<A href="http://www.hanabank.com/">하나은행</A> |
+<A href="http://www.myasset.com/">동양종금</A> |
+<a href="http://paxnet.moneta.co.kr/">paxnet</a> |
+           </TD></TR>
+        <TR>
+          <TD bgColor=#e0e0d0><STRONG>음악</STRONG></TD>
+          <TD bgColor=#e0e0d0><A 
+            href="http://staff.sonnori.co.kr/staff/www.bugsmusic.co.kr">벅스뮤직</A> 
+            | <A href="http://hey.to/freemusic">가요/MP3</A> | <A 
+            href="http://jpop.to/">일본음악</A> | </TD></TR>
+        <TR>
+          <TD><STRONG>취미</STRONG></TD>
+          <CENTER></CENTER>
+          <TD>
+            <P align=left>
+<A href="http://joyhobby.chollianshop.com/">조이하비</A> | 
+<a href="http://ideaholic.co.kr/">ideaholic</a> |
+<A href="http://www.earlyadopter.co.kr/">Early Adopter </a> | 
+<A href="http://www.toyspark.co.kr/">토이스파크</A> | 
+<A href="http://www.hlj.com/">하비링크</A> | 
+<A href="http://www.nightsaver.net/">나이트세이버</A> | 
+<A href="http://www.dcinside.com/">DCInside</A> | 
+<A href="http://www.nbinside.com/">NBinside</A> | 
+<a href="http://www.ntdvd.com/">뉴타입DVD</a> |
+<a href="http://www.yongpyong.co.kr/">용평리조트</a> |
+<a href="http://www.phoenixpark.co.kr/">휘닉스파크</a> |
+<a href="http://www.camuser.co.kr/">캠유저</a> |
+<a href="http://www.cetizen.com/">cetizen</a> |
+<a href="http://dvdprime.intizen.com/">dvdprime</a> |
+<A href="http://www.cine21.com/">cine21</a> |
+        </P></TD></TR>
+        <CENTER>
+        <TR>
+          <TD bgColor=#e0e0d0><STRONG>생활정보</STRONG></TD>
+          <TD bgColor=#e0e0d0><A href="http://eds.kornet.nm.kr/">전화번호</A> | <A 
+            href="http://www.infomail.co.kr/">INFOMail</A> | <A 
+            href="http://www.nmetro.com/">nMetro</A> | <A 
+            href="http://www.iloveschool.co.kr/">i♡school</A> | <A 
+            href="http://www.freechal.com/">freechal</A> | <A 
+            href="http://www.dreamx.net/">dreamx</A> | <A 
+            href="http://www.dreamwiz.com/">dreamwiz</A> | <A 
+            href="http://www.msn.co.kr/">msn</A> |
+<a href="http://www.congnamul.com/">콩나물지도</a> |
+<a href="http://www.missed-call.com/">missed-call</a> |
+</TD></TR></TBODY></TABLE><BR>Last Update on 31-Mar-2016 </CENTER></TD></TR></TBODY></TABLE>
+<P>
+<BR>
+<CENTER><FONT color=black>
+<a rel="license" href="http://creativecommons.org/licenses/by-nc/2.0/kr/">
+<img alt="Creative Commons License" style="border-width:0" src="http://creativecommons.org/images/public/somerights20.png" />
+</a>
+<br />이 링크페이지는 
+<a rel="license" href="http://creativecommons.org/licenses/by-nc/2.0/kr/">크리에이티브 커먼즈 코리아 저작자표시-비영리 2.0 대한민국 라이센스</a>에 따라 이용하실 수 있습니다.
+
+
+</center>
+  
+  </body>
+</html>
